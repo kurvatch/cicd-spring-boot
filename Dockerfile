@@ -13,6 +13,9 @@ EXPOSE 5500
 # The application's jar file
 ARG JAR_FILE=target/cicd-spring-boot-0.0.1-SNAPSHOT.jar
 
+# List the files within in the cloud infra
+RUN ls -lart
+
 # Add the application's jar to the container
 ADD ${JAR_FILE} cicd-spring-boot-0.0.1-SNAPSHOT.jar
 
