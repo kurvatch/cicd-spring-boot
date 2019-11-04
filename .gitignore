@@ -18,6 +18,9 @@
 *.zip
 *.tar.gz
 *.rar
+.project
+.classpath
+.settings
 
 # Directory to be ignored
 
