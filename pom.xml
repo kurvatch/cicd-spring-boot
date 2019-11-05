@@ -16,6 +16,8 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<docker.image.prefix>kurvatch/cicd</docker.image.prefix>
+		<docker-spotify-plugin-version>1.4.9</docker-spotify-plugin-version>
 	</properties>
 
 	<dependencies>
@@ -46,7 +48,10 @@
 			<plugin>
   				<groupId>com.spotify</groupId>
   				<artifactId>dockerfile-maven-plugin</artifactId>
-  				<version>1.4.8</version>
+  				<version>${docker-spotify-plugin-version}</version>
+				<configuration>
+					<repository>${docker.image.prefix}/${project.artifactId}</repository>
+				</configuration>
   				<executions>
     				<execution>
       					<id>default</id>
