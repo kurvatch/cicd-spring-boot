@@ -5,4 +5,4 @@ os:
   - linux
 env:
   - NO_GCE_CHECK=True
-script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn deploy -DskipTests=true -Dmaven.javadoc.skip=true -B -V
