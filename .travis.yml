@@ -1,6 +1,8 @@
 language: java
-
 jdk: 
-  -openjdk8
-  
+  - openjdk8
+os: 
+  - linux
+env:
+  - NO_GCE_CHECK=True
 script: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
