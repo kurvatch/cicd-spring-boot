@@ -50,7 +50,7 @@
   				<artifactId>dockerfile-maven-plugin</artifactId>
   				<version>${docker-spotify-plugin-version}</version>
 				<configuration>
-					<repository>${docker.image.prefix}/${project.artifactId}</repository>
+					<repository>${docker.image.prefix}</repository>
 				</configuration>
   				<executions>
     				<execution>
