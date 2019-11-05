@@ -50,6 +50,8 @@
   				<artifactId>dockerfile-maven-plugin</artifactId>
   				<version>${docker-spotify-plugin-version}</version>
 				<configuration>
+					<serverId>docker-hub</serverId>
+    				<registryUrl>https://index.docker.io/v1/</registryUrl>
 					<repository>${docker.image.prefix}</repository>
 				</configuration>
   				<executions>
